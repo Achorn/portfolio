@@ -22,6 +22,10 @@ function AboutPage(props) {
           to weigh and manage their gear. It is made with React, Redux, and
           Bootstrap
         </p>
+        <p>
+          If I'm not coding, I'm either biking, cooking, hiking, reading, or
+          making coffee with my friends.
+        </p>
       </Content>
     </div>
   );
