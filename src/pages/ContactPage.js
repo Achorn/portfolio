@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Hero from "../components/Hero";
-import Content from "../components/Content";
-import { Form, Button } from "react-bootstrap";
+// import Content from "../components/Content";
+// import { Form, Button } from "react-bootstrap";
 import Axios from "axios";
 class ContactPage extends Component {
   constructor(props) {

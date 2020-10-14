@@ -12,18 +12,18 @@ class Carousel extends Component {
       items: [
         {
           id: 0,
-          title: "Camping List Assist",
-          subTitle: "for weight lists, and sub-lists",
+          title: "Camping Logger",
+          subTitle: "Camping Organizer",
           imgSrc: campingpic,
-          link: "http://achorn.github.io/",
+          link: "http://achorn.github.io/Camping-Organizer",
           select: "false",
         },
         {
           id: 1,
           title: "Joshua Achorn",
-          subTitle: "Linkedin Acount",
+          subTitle: "My Github Acount",
           imgSrc: profilepic,
-          link: "https://www.linkedin.com/in/joshua-achorn/",
+          link: "https://github.com/Achorn",
           select: "false",
         },
         {
