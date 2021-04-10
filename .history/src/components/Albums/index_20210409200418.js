@@ -7,8 +7,6 @@ class Albums extends React.Component {
     let album1 = {
       vinyl: require("../../assets/images/vinyl.png"),
       cover: require("../../assets/images/fallingDown.png"),
-      link:
-        "https://open.spotify.com/album/2lXw9UDPCJFWSD0aHyeYOI?highlight=spotify:track:2Bkd7kn4fPPupJlovelIDf",
     };
     let album2 = {
       vinyl: require("../../assets/images/redVinyl.png"),

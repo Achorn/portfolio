@@ -7,22 +7,20 @@ class Albums extends React.Component {
     let album1 = {
       vinyl: require("../../assets/images/vinyl.png"),
       cover: require("../../assets/images/fallingDown.png"),
-      link:
-        "https://open.spotify.com/album/2lXw9UDPCJFWSD0aHyeYOI?highlight=spotify:track:2Bkd7kn4fPPupJlovelIDf",
     };
     let album2 = {
       vinyl: require("../../assets/images/redVinyl.png"),
-      cover: require("../../assets/images/tourguide.jpg"),
+      cover: equire("../../assets/images/tourguide.jpg"),
     };
     let { classes } = this.props;
 
     return (
       <div className={classes.Albums}>
         <div className={classes.AlbumContainer}>
-          <Album cover={album1.cover} vinyl={album1.vinyl} />
+          <Album cover={album1} />
         </div>
         <div className={classes.AlbumContainer}>
-          <Album cover={album2.cover} vinyl={album2.vinyl} />
+          <Album cover={album2} />
         </div>
       </div>
     );

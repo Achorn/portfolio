@@ -4,20 +4,20 @@ import { withStyles } from "@material-ui/core";
 class Album extends React.Component {
   render() {
     let { classes } = this.props;
+    // let cover = require("../../../assets/images/tourguide.jpg");
+    let vinyl = require("../../../assets/images/vinyl.png");
     let link =
       "https://open.spotify.com/album/2lXw9UDPCJFWSD0aHyeYOI?highlight=spotify:track:2Bkd7kn4fPPupJlovelIDf";
 
     const openInNewTab = () => {
-      if (this.props.link) {
-        const newWindow = window.open(link, "_blank", "noopener,noreferrer");
-        if (newWindow) newWindow.opener = null;
-      }
+      const newWindow = window.open(link, "_blank", "noopener,noreferrer");
+      if (newWindow) newWindow.opener = null;
     };
     return (
       <div className={classes.albumContainer}>
         <div className={classes.album} onClick={openInNewTab}>
           <img className={classes.cover} src={this.props.cover} />
-          <img className={classes.vinyl} src={this.props.vinyl} />
+          <img className={classes.vinyl} src={vinyl} />
         </div>
       </div>
     );
