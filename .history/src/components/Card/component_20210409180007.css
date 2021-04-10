@@ -1,0 +1,51 @@
+.j-card {
+  z-index: 0;
+  position: relative;
+  margin: 20px;
+  border-radius: 10px;
+  width: 300px;
+  height: 480px;
+  box-shadow: 0px 0px 3px 1px #ccc;
+  background-size: cover;
+  background-position: center;
+  transition: 500ms;
+}
+
+.j-card :hover {
+  cursor: pointer;
+  /* opacity: 0.5; */
+  top: -10px;
+}
+
+.j-card-image {
+  position: absolute;
+  z-index: 1;
+  transition: 0.3s;
+
+  /* border-radius: 10px;
+  width: 300px;
+  height: 480px; */
+  /* box-shadow: 0px 0px 3px 1px #ccc; */
+  /* visibility: hidden; */
+}
+
+.j-card-info {
+  position: absolute;
+
+  z-index: 2;
+
+  margin-top: 10px;
+  min-height: 100px;
+}
+
+.j-card-title {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 15px;
+}
+
+.j-card-sub-title {
+  font-size: 20px;
+  margin: 23px;
+  font-weight: bold;
+}
