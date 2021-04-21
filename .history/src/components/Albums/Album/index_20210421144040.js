@@ -18,7 +18,6 @@ class Album extends React.Component {
     let { classes } = this.props;
 
     const openInNewTab = () => {
-      console.log(this.props.link);
       if (this.props.link) {
         console.log("opening link");
         const newWindow = window.open(

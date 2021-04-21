@@ -19,7 +19,7 @@ class Albums extends React.Component {
     return (
       <div className={classes.Albums}>
         <div className={classes.AlbumContainer}>
-          <Album cover={album1.cover} vinyl={album1.vinyl} link={album1.link} />
+          <Album cover={album1.cover} vinyl={album1.vinyl} />
         </div>
         <div className={classes.AlbumContainer}>
           <Album cover={album2.cover} vinyl={album2.vinyl} />

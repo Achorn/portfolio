@@ -13,12 +13,11 @@ function AboutPage(props) {
           difference.
         </p>
         <p>
-          I love the outdoors and Im a cerial hobbiest to fill in my free
-          time...{" "}
+          I love the outdoors and Im a cerial hobbiest to fill in my free time{" "}
         </p>
 
         <p>
-          I'm so bad at advocating for myself... I'm a software developer who is
+          I'm so bad at advocating for myself. I'm a software developer who is
           loud and funny and brings joy to those around him and I love creating.
           Is that what you want to hear?
         </p>

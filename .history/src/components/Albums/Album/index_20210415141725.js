@@ -16,20 +16,18 @@ class Album extends React.Component {
 
   render() {
     let { classes } = this.props;
+    let link =
+      "https://open.spotify.com/album/2lXw9UDPCJFWSD0aHyeYOI?highlight=spotify:track:2Bkd7kn4fPPupJlovelIDf";
 
     const openInNewTab = () => {
-      console.log(this.props.link);
       if (this.props.link) {
-        console.log("opening link");
-        const newWindow = window.open(
-          this.props.link,
-          "_blank",
-          "noopener,noreferrer"
-        );
+        const newWindow = window.open(link, "_blank", "noopener,noreferrer");
         if (newWindow) newWindow.opener = null;
-      } else alert("coming soon");
+      }
     };
-    return (
+    return this.state.imageLoading ? (
+      <h1>loading</h1>
+    ) : (
       <div className={classes.albumContainer}>
         <div className={classes.album} onClick={openInNewTab}>
           <img

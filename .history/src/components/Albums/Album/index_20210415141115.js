@@ -4,38 +4,32 @@ import { withStyles } from "@material-ui/core";
 class Album extends React.Component {
   constructor(props) {
     super(props);
-    this.handleImageLoaded = this.handleImageLoaded.bind(this);
-
     this.state = { imageLoading: true };
   }
-
   handleImageLoaded() {
-    // this.setState({ imageLoading: false });
-    console.log("image loaded");
+    this.setState({ imageLoading: false });
   }
 
   render() {
     let { classes } = this.props;
+    let link =
+      "https://open.spotify.com/album/2lXw9UDPCJFWSD0aHyeYOI?highlight=spotify:track:2Bkd7kn4fPPupJlovelIDf";
 
     const openInNewTab = () => {
-      console.log(this.props.link);
       if (this.props.link) {
-        console.log("opening link");
-        const newWindow = window.open(
-          this.props.link,
-          "_blank",
-          "noopener,noreferrer"
-        );
+        const newWindow = window.open(link, "_blank", "noopener,noreferrer");
         if (newWindow) newWindow.opener = null;
-      } else alert("coming soon");
+      }
     };
-    return (
+    return !this.state.imageLoading ? (
+      <h1>loading</h1>
+    ) : (
       <div className={classes.albumContainer}>
         <div className={classes.album} onClick={openInNewTab}>
           <img
             className={classes.cover}
             src={this.props.cover}
-            onLoad={this.state.handleImageLoaded}
+            onLoad={this.handleImageLoaded.bind(this)}
           />
           <img className={classes.vinyl} src={this.props.vinyl} />
         </div>

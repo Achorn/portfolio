@@ -18,7 +18,7 @@ function AboutPage(props) {
         </p>
 
         <p>
-          I'm so bad at advocating for myself... I'm a software developer who is
+          I'm so bad at advocating for myself. I'm a software developer who is
           loud and funny and brings joy to those around him and I love creating.
           Is that what you want to hear?
         </p>
