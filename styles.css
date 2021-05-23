@@ -1,0 +1,146 @@
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  color: #78434f;
+  scroll-behavior: smooth;
+}
+/* section {
+  overflow-y: scroll;
+
+  scroll-behavior: smooth; /* <----- THE SECRET ---- */
+/* } */
+#navbar {
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  left: 0;
+  background-color: #78434f;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#nav-link {
+  text-decoration: none;
+  margin-right: 35px;
+  color: white;
+  /* font-weight: bold; */
+  font-size: 1.2em;
+}
+#about {
+  height: 100vh;
+  /* background-color: white; */
+  background: linear-gradient(90deg, white, white, white, white, #f1eced);
+  color: #78434f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#projects-section {
+  background-color: #47282f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+#projects {
+  /* padding: 10px; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+  grid-gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+#project-card {
+  position: relative;
+  /* width: 200px; */
+  /* background-image: url("content/tributePage.png"); */
+  background-position: center;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  /* background-color: white; */
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+  position: relative;
+  top: 0;
+  opacity: 0.9;
+}
+#project-card:hover {
+  /* position: relative; */
+  top: -5px;
+  opacity: 1;
+  /* transform: skew(0, 1deg); */
+}
+#project-img {
+  /* object-fit: contain; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  max-width: 130%;
+  max-height: 130%;
+}
+#project-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #78434f;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+#contact {
+  background: linear-gradient(90deg, white, white, white, white, #f1eced);
+  height: 100vh;
+}
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#contact-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#contact-link {
+  position: relative;
+  color: #78434f;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px;
+  transition: 0.3s;
+  top: 0;
+  /* opacity: 0.9; */
+  /* text-shadow: 2px 2px 2px 2px; */
+}
+#contact-link:hover {
+  top: -4px;
+}
+
+#contact-link > i {
+  margin-right: 9px;
+  /* color: red; */
+}
+
+#footer {
+  display: flex;
+  font-size: 0.8em;
+  border-top: solid #78434f 2px;
+  padding: 20px;
+  background: linear-gradient(90deg, white, white, white, white, #f1eced);
+  justify-content: flex-end;
+  /* opacity: 0.5; */
+}
